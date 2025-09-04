@@ -52,11 +52,12 @@ class Stack {
 
 int main() {
     /*
-        [ClassName] objectName(parameters/capacity);
+        [ClassName] objectName;
         objectName.method(parameters);
 
         try lang japun ni dari dapita boss para ma explore nimo
     */
 
 }
+
 
