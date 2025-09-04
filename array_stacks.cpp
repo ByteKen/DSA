@@ -56,6 +56,19 @@ class Stack {
         bool isEmpty() {
             return top < 0;
         }
+
+        void display() {
+            if (top < 0) {
+                cout << "Stack is Empty" << endl;
+                return;
+            }
+            
+            cout << "Stack elements (top to bottom): ";
+            for (int i = top; i >= 0; i--) {
+                cout << array[i] << " ";
+            }
+            cout << endl;
+        }
 };
 
 int main() {
@@ -66,4 +79,22 @@ int main() {
 
     para ma try tryan sad nimo boss
    */
+    Stack s(5);
+
+    cout << "\nEnter 5 numbers to push onto the stack:" << endl;
+    for (int i = 0; i < 5; i++) {
+        int num;
+        cout << "Enter number " << (i + 1) << ": ";
+        cin >> num;
+        s.push(num);
+        cout << "After pushing " << num << ": ";
+        s.display();
+    }
+    
+    cout << "\nFinal stack: ";
+    s.display();
+    
+    cout << "\nTop element (peek): " << s.peek() << endl;
+
+    return 0;
 }
