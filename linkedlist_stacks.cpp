@@ -2,8 +2,7 @@
 using namespace std;
 
 // Node class - mao ni ang mga building blocks sa atong linked list
-class Node {
-    public:
+struct Node {
         int data;     // Mao ni ang value nga i-store sa node
         Node* next;   // Pointer nga nag point sa sunod nga node
         
@@ -60,3 +59,4 @@ int main() {
     */
 
 }
+
